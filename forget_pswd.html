@@ -1,0 +1,58 @@
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body{margin:5px; background-color:#EBEFF2;}
+#main1{background-color:white; width:100%; height:auto; border:1px solid transparent; }
+#main{border:1px solid #D2D9D7; width:30%;  background-color:#BCD2EE; margin:auto right; margin-top:1%; }
+label{border:1px solid transparent; width:10vw; height:10px; display: table-cell; font-size:1vw; word-spacing:0.1em; letter-spacing:0.03em; font-weight:600; font-family:Arial,Helvetica,sans-serif; font-size:small; line-height: 1.5;}
+#header{height:5vh; width:100%; border:1px solid #D2D9D7; font-size:18; padding:10px 0 0px 0; background-image:linear-gradient(#E0EEEE,#9AC0CD); font-weight:1000; font-family:Oswald; letter-spacing:0.1sem;}
+#header2{height:4vh; width:100%; border:1px solid #D2D9D7; font-size:18; padding:2px 0 0px 0; background-image:linear-gradient(#E0EEEE,#9AC0CD); font-weight:1000;  font-family:Oswald; letter-spacing:0.0em;  margin-top:0%;}
+span{padding: 0 0 0 0%; display:table-cell; margin-left:10%;}
+span#before_form{border:1px solid transparent; margin:auto right;  font-size:small; font-family:Arial,Helvetica,sans-serif;}
+span#before_form::after{content:"*"; color:red;}
+span#before_form::before{content:"*"; color:red;}
+input[type=text],[type=email]{outline:none; border:1px solid grey; width:12vw; border-radius:3px 3px; background-color:white; font-size:1vw; word-spacing:0.2em; letter-spacing:0.05em; font-weight:500; font-family:Arial,Helvetica,sans-serif; font-size:small;}
+#input1{outline:none; border:1px solid grey; width:18vw; border-radius:3px 3px; background-color:white; font-size:1vw; word-spacing:0.2em; letter-spacing:0.05em; font-weight:500; font-family:Arial,Helvetica,sans-serif; font-size:small;}
+input[type=submit]{border:1px solid grey; border-radius:3px 3px; margin-top:2%;}
+</style>
+<script>
+
+</script>
+</head>
+<body>
+<div id="main1">
+<div id="header">ADMIN PORTAL : FORGET PASSWORD</div>
+<hr>
+
+<span id="before_form">THIS PASSWORD RESET WINDOW IS FOR REGISTERED STUDENTS OF DIT ONLY</span>
+<div id="main">
+<form method="post" action="#">
+
+<div id="header2">Reset Password</div>
+<div class="form-group">
+<label>User Id*</label>
+<span><input type="text" name="User_ID"></span>
+</div>
+
+<div class="form-group">
+<label>Email Id*</label>
+<span><input id="input1" type="text" name="Email_ID"></span>
+</div>
+
+<div class="form-group">
+<label>Mobile No*</label>
+<span><input type="text" name="Mno"></span>
+</div>
+
+<div class="form-group">
+<span><input type="submit" value="Reset Password" name="submit"></span>
+</div>
+
+</form>
+</div>
+</div>
+
+</body>
+</html>
