@@ -1,0 +1,149 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{background-color:#35586C; margin:0px;}
+span#s1{margin-left:3%; color:white;}
+div#header{ height:7%; width:100%; font-family:Verdana; font-size:4vh; padding-top:1%;}
+div#left{border:1px solid transparent; float:left; width:15vw; margin-top:2.3%;}
+div#right{display:table; width:83vw; height:85%; background-color:rgba(220,220,220,0.9); margin-top:2.3%; margin-right:0; border:1px solid transparent;}
+div#inside_left{border:1px solid transparent; height:40vh; width:100%; margin-top:0%; background-color:rgba(220,220,220,0.1);}
+div#left1{border:1px solid transparent; height:16%; font-family:Verdana; font-size:2.5vh; color:white; padding-top:0%; display:none; }
+div#left1a{border:1px solid transparent; height:16%; font-family:Verdana; font-size:2.5vh; color:white; padding-top:4%; display:none;}
+div#left1b{border:1px solid transparent; height:16%; font-family:Verdana; font-size:2.5vh; color:white; padding-top:4%;}
+div#left2{border:1px solid transparent; height:16%; font-family:Verdana; font-size:2.7vh; font-weight:540; color:white; padding-top:4%; padding-left:10%;}
+div#left2:hover{border:1px solid transparent; height:16%; font-family:Verdana; font-size:2.7vh; font-weight:540; color:white; padding-top:4%; background-color:rgba(220,220,220,0.2); animation-name:example; animation-duration:1.5s; animation-delay:0s;}
+div#left3{border:1px solid transparent; height:16%; font-family:Verdana; font-size:2.7vh; font-weight:540; color:white; padding-top:4%;}
+div#left3:hover{border:1px solid transparent; height:16%; font-family:Verdana; font-size:2.7vh; font-weight:540; color:white; padding-top:4%; background-color:rgba(220,220,220,0.2); animation-name:example; animation-duration:1.5s; animation-delay:0s;}
+div#left1:hover{border:1px solid transparent; height:16%; font-family:Verdana; font-size:2.5vh; color:white; padding-top:4%; background-color:rgba(220,220,220,0.2); animation-name:example; animation-duration:1.5s; animation-delay:0s;}
+input#text1{border:1px solid transparent; outline:none; color:rgba(220,220,220,1.5); border-radius:3px 3px; height:3vh; width:15vw; margin-top:0%; margin-left:10%; font-family:Verdana; font-size:0.8vw; background-color:transparent;}
+div#left1a:hover{border:1px solid transparent; height:16%; font-family:Verdana; font-size:2.5vh; color:white; padding-top:4%; background-color:rgba(220,220,220,0.2); animation-name:example; animation-duration:1.5s; animation-delay:0s;}
+div#left1b:hover{border:1px solid transparent; height:16%; font-family:Verdana; font-size:2.5vh; color:white; padding-top:4%; background-color:rgba(220,220,220,0.2); animation-name:example; animation-duration:1.5s; animation-delay:0s;}
+img#img1{height:55%; width:2.5vw;}
+span#s2{float:right;}
+div#header2{border-bottom:3px solid #35586C; width:90%; padding:1.5%; font-size:3vw; font-family:Verdana; color:rgba(53,88,108,0.7); margin:auto auto;}
+a#a1{text-decoration:none;}
+
+#img2{width:4%; float:right; border:1px solid white; border-radius:50% 50%; margin-right:2%;}
+#modalboxes{border:1px solid #35586C; height:22%; width:30%; float:right; background-image:linear-gradient(lightgrey,#35586C); z-index:-1; transition: opacity 400ms ease-in; display:none; animation-name:moveit; animation-delay:0s; animation-duration:1s;}
+
+@keyframes moveit
+{
+	0%{opacity:0; transform:translate3d(100%, 0, 0);}
+	100%{opacity:1; transform:none;}
+}
+#modalboxes:target{opacity:1;}
+#close{border:1px solid transparent; height:auto; width:5%; padding-left:1%; border-radius:50% 50%; float:right; margin:1% 2% 0 0; background-color:transparent; color:white; font-weight:1000; cursor:pointer; font-size:1vw; font-family:Verdana; animation-name:moveit; animation-delay:0s; animation-duration:1s;}
+#close:hover{border:1px solid transparent; height:auto; width:5%; padding-left:1%; border-radius:50% 50%; float:right; margin:1% 2% 0 0; background-color:transparent; color:grey; font-weight:1000; cursor:pointer; font-size:1vw; font-family:Verdana; animation-name:moveit; animation-delay:0s; animation-duration:1s;}
+a#signout:hover{}
+a#aboutme{}
+#me{border:1px solid #35586C; border-radius:10px 10px; background-color:rgba(220,220,220,0.9); width:7vw; height:5vh; font-family:Verdana; margin-top:0vh; margin-left:2vw; font-size:1.5vh;}
+#me:hover{border:1px solid #35586C; border-radius:10px 10px; background-color:#35586C; color:white; width:7vw; height:5vh; font-family:Verdana; margin-top:0vh; margin-left:2vw;}
+#out{border:1px solid #35586C; border-radius:10px 10px; background-color:rgba(220,220,220,0.9); width:7vw; height:5vh; font-family:Verdana; margin-top:0vh; float:right; font-size:1.5vh;}
+#out:hover{border:1px solid #35586C; border-radius:10px 10px; background-color:#35586C; color:white; width:7vw; height:5vh; font-family:Verdana; margin-top:0vh; float:right;}
+<!--box-shadow:-5px 0px 0px rgba(0,0,0,0.05) inset;-->
+@keyframes example{
+0%{background-color:rgba(220,220,220,0.01);}
+100%{background-color:rgba(220,220,220,0.25);}
+}
+.fadeinup{animation-name:fadeInUp; animation-duration:1s;}
+@keyframes fadeInUp
+{
+	0%{opacity: 0; transform: translate3d(0,0,-10%);}
+	100%{opacity: 1; transform:none;}
+}
+
+
+.righthover:after {
+	float:right;
+  display: block;
+  left: 0;
+  bottom: 0px;
+  width: 0%;
+  height:auto;
+  margin-top:-2%;
+  background-color: rgba(0,0,0,0.5);
+  content: "";
+  transition: width 0.5s ;
+}
+.righthover:hover:after{
+	width: 10%;
+	margin-top:-2%;
+	height:100%;
+}
+
+div#table{height:50%; width:99.8%; border-bottom:1px solid grey; margin-top:1%; overflow: scroll;}
+div#overview{background-color:white; font-size:1vw; font-family:Verdana; padding:1%; 
+    position: fixed;	
+    width: 100%;
+    z-index: 1000;} 
+table#tab1{table-layout: fixed;border-spacing:1px 1px; border:1px solid grey; width:100%; border-radius:3px 3px; margin-top:4%; }
+tr.even{background-color:rgb(253, 252, 252); width:5px; height:5%; }
+tr.odd{background-color:rgb(240, 229, 229); width:5px; height:5%; text-align:center; font-style:Verdana;}
+tr.odd:hover{background-color:white; width:5px; height:5%; text-align:center; font-style:Verdana;}
+td#td1{color:#00688B;}
+</style>
+<script>
+function opens()
+{
+		for(j=0;j<2;j++)
+	{
+		document.getElementById("left1").style.display = 'block';
+		document.getElementById("left1a").style.display = 'block';
+	}
+}
+function closes()
+{
+		for(j=0;j<2;j++)
+	{
+		document.getElementById("left1").style.display = 'none';
+		document.getElementById("left1a").style.display = 'none';
+	}
+}
+function modaling()
+{
+	document.getElementById("modalboxes").style.display='block';
+}
+
+function closing()
+{
+	document.getElementById("modalboxes").style.display='none';
+}
+</script>
+</head>
+<body>
+<div id="header"><span id="s1">Dashboard</span><img id="img2" src="user1.png" alt="user" onclick="modaling()"></div>
+<div id="left">
+<div id="inside_left">
+<center>
+<div id="left2" onclick="opens()">Subjects<span id="s2"><img id="img1" src="arrow3.png" onclick="opens()"></span></div>
+<a id="a1" href="Completed.html"><div id="left1" class="righthover" >Completed</div></a>
+<a id="a1" href="Remaining.html"><div id="left1a" class="righthover" >Remaining</div></a>
+<a id="a1" href="Subject_registration.html"><div id="left1b" class="righthover" >Subject Registration</div></a>
+</center>
+</div>
+</div>
+<div id="right" class="fadeinup">
+<div id="modalboxes">
+<div id="close" onclick="closing()">X</div>
+<label><input id="text1" type="text" name="name" value="Divyank Sharma" readonly></label>
+<label><input id="text1" type="text" name="rollno" value="160110068" readonly></label>
+<label><input id="text1" type="text" name="sapid" value="1000007527" readonly></label>
+<div><label><input id="text1" type="text" name="emailid" value="divyanksharma22@gmail.com" readonly></label></div>
+<hr>
+<a href="#" id="aboutme"><button id="me">About Me</button></a>
+<a href="#" id="signout"><button id="out" value="Sign Out">Log Out</button></a>
+</div>
+<div id="header2">Subjects</div>
+<div id="table">
+<div id="overview">Subject Overview</div>
+<table id="tab1">
+<thead><tr class="even"><th>Code</th><th>Name</th><th>Credit</th><th>Department</th><th>Prerequist</th><th>Avalability</th></tr></thead>
+<tbody><tr class="odd"></td><td>1</td><td id="td1">abcd</td><td>3</td><td id="td1">CS</td><td id="td1">Maths</td><td>Yes</td></tr><tbody>
+
+
+</table>
+</div>
+</div>
+</body>
+</html>
